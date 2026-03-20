@@ -55,14 +55,6 @@ a {
   color: inherit;
 }
 
-code {
-  padding: 0.14em 0.45em;
-  border-radius: 999px;
-  background: rgba(15, 13, 10, 0.08);
-  font-family: var(--mono);
-  font-size: 0.88em;
-}
-
 .page-noise {
   position: fixed;
   inset: 0;
@@ -80,7 +72,6 @@ code {
 .status-strip,
 .product-shell,
 .workflow-shell,
-.build-shell,
 .notify-shell,
 .site-footer {
   position: relative;
@@ -186,7 +177,6 @@ code {
 .chip,
 .feature-label,
 .callout-label,
-.build-label,
 .status-item span,
 .workflow-index,
 .eyebrow {
@@ -261,8 +251,6 @@ h3 {
 .feature-card p,
 .callout p,
 .workflow-card p,
-.build-head p,
-.build-card p,
 .notify-sub,
 .hero-note p {
   color: var(--ink-soft);
@@ -455,7 +443,6 @@ h3 {
 }
 
 .product-shell,
-.build-shell,
 .notify-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 22px auto 0;
@@ -480,13 +467,11 @@ h3 {
 }
 
 .product-head,
-.workflow-head,
-.build-head {
+.workflow-head {
   max-width: 760px;
 }
 
-.product-head p,
-.build-head p {
+.product-head p {
   margin: 22px 0 0;
   max-width: 60ch;
 }
@@ -535,8 +520,7 @@ h3 {
   text-align: center;
 }
 
-.feature-grid,
-.build-grid {
+.feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -544,7 +528,6 @@ h3 {
 }
 
 .feature-card,
-.build-card,
 .workflow-card,
 .callout {
   padding: 24px;
@@ -556,7 +539,6 @@ h3 {
 
 .feature-label,
 .callout-label,
-.build-label,
 .workflow-index {
   display: inline-block;
   margin-bottom: 12px;
@@ -566,8 +548,7 @@ h3 {
 
 .feature-card p,
 .callout p,
-.workflow-card p,
-.build-card p {
+.workflow-card p {
   margin: 14px 0 0;
   font-size: 0.97rem;
 }
@@ -642,12 +623,6 @@ h3 {
 
 .workflow-index {
   color: rgba(247, 242, 232, 0.38);
-}
-
-.build-shell {
-  background:
-    radial-gradient(circle at 84% 12%, rgba(171, 110, 24, 0.12), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(250, 245, 236, 0.98) 100%);
 }
 
 .notify-shell {
@@ -812,7 +787,6 @@ h3 {
 
   .status-strip,
   .feature-grid,
-  .build-grid,
   .workflow-grid {
     grid-template-columns: 1fr;
   }
@@ -845,7 +819,6 @@ h3 {
   .status-strip,
   .product-shell,
   .workflow-shell,
-  .build-shell,
   .notify-shell,
   .site-footer {
     width: calc(100% - 24px);
@@ -853,7 +826,6 @@ h3 {
 
   .product-shell,
   .workflow-shell,
-  .build-shell,
   .notify-shell {
     padding: 68px 18px;
     border-radius: 28px;

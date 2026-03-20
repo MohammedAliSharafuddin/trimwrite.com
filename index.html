@@ -37,7 +37,7 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="#quartopad">QuartoPad</a>
         <a href="#trimwrite-app">TrimWrite</a>
-        <a href="#status">Status</a>
+        <a href="#workflow">Workflow</a>
         <a href="#notify">Beta access</a>
         <a
           class="nav-cta"
@@ -72,14 +72,14 @@
               <a class="btn btn-secondary" href="#products"
                 >See product snapshots</a
               >
-              <a class="btn btn-tertiary" href="#status">Read build status</a>
+              <a class="btn btn-tertiary" href="#workflow">See the workflow</a>
             </div>
 
             <div class="hero-chips">
-              <span class="chip chip-qp">QuartoPad: private beta</span>
-              <span class="chip chip-tw">TrimWrite: internal beta</span>
+              <span class="chip chip-qp">QuartoPad: testing now</span>
+              <span class="chip chip-tw">TrimWrite: coming soon</span>
               <span class="chip">Local-first workflow</span>
-              <span class="chip">Open-source in progress</span>
+              <span class="chip">Early access by request</span>
             </div>
           </div>
 
@@ -97,10 +97,10 @@
               />
             </figure>
             <div class="hero-note">
-              <span>Why this site changed</span>
+              <span>What to expect</span>
               <p>
-                The public face now treats both products as pre-release. That is
-                the accurate position for the code currently in testing.
+                Both products are being tested in small groups first. This site
+                is the place to follow the lineup and request early access.
               </p>
             </div>
           </div>
@@ -110,15 +110,15 @@
       <section class="status-strip">
         <div class="status-item">
           <span>QuartoPad</span>
-          <strong>Private beta package for Quarto and R workflows</strong>
+          <strong>A browser-based Quarto workspace for R-driven documents</strong>
         </div>
         <div class="status-item">
           <span>TrimWrite</span>
-          <strong>Public repo, working analyzer UI, broader hardening still underway</strong>
+          <strong>A draft analyzer for tone, patterns, and cleaner revision</strong>
         </div>
         <div class="status-item">
-          <span>Launch status</span>
-          <strong>Both products are still in testing</strong>
+          <span>Availability</span>
+          <strong>Both products are currently in testing</strong>
         </div>
       </section>
 
@@ -195,44 +195,41 @@
 
       <section class="product-shell tw-shell" id="trimwrite-app">
         <div class="product-head" data-reveal>
-          <span class="product-tag tag-tw">TrimWrite · internal beta</span>
+          <span class="product-tag tag-tw">TrimWrite · coming soon</span>
           <h2>
             A draft analyzer for vague phrasing, AI habits, and over-polished
             prose.
           </h2>
           <p>
-            The public repo already contains a substantial analyzer UI. The
-            right public message, though, is still beta: useful enough to test,
-            not yet positioned as fully launched.
+            TrimWrite is built for writers who want a second pass before a draft
+            leaves their desk. It highlights phrases that sound vague,
+            formulaic, overloaded, or unlike the voice you meant to keep.
           </p>
         </div>
 
         <div class="trimwrite-layout" data-reveal>
           <div class="trimwrite-copy">
             <div class="callout">
-              <span class="callout-label">Current beta scope</span>
+              <span class="callout-label">What it spots</span>
               <p>
-                Pattern highlighting, readability, structural signals, export
-                tools, and sample-driven analysis are already visible in the
-                working interface.
+                Vague language, filler, AI-shaped phrases, and structural
+                signals that make polished writing feel generic.
               </p>
             </div>
 
             <div class="callout">
-              <span class="callout-label">Why it is still in testing</span>
+              <span class="callout-label">How it helps</span>
               <p>
-                The repo documentation still lists deployment, CI/CD, payment
-                flow, and broader testing work as pending. The site now matches
-                that reality.
+                Instead of guessing what feels off, you get a marked-up draft,
+                readable stats, and a cleaner basis for revision.
               </p>
             </div>
 
             <div class="callout">
-              <span class="callout-label">Public-facing promise</span>
+              <span class="callout-label">Release path</span>
               <p>
-                Paste the draft. See the phrases that sound vague, boilerplate,
-                loaded, or model-shaped. Keep the voice that still feels like
-                yours.
+                Access is being opened gradually while the workflow is refined.
+                Join the waitlist if you want to test early versions.
               </p>
             </div>
           </div>
@@ -249,7 +246,7 @@
         </div>
       </section>
 
-      <section class="workflow-shell">
+      <section class="workflow-shell" id="workflow">
         <div class="workflow-head" data-reveal>
           <p class="eyebrow eyebrow-light">How the products fit together</p>
           <h2>One brand. Two precise tools. One writing loop.</h2>
@@ -280,51 +277,6 @@
             <p>
               That keeps the analysis product clear: it is not another editor,
               it is the second tool in the line.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="build-shell" id="status">
-        <div class="build-head" data-reveal>
-          <p class="eyebrow">Current build status</p>
-          <h2>What the repo audit says right now.</h2>
-          <p>
-            The site should lead with honesty. QuartoPad is further along as a
-            product. TrimWrite has a real working UI but is still in the
-            hardening phase. <code>trimwrite.com</code> should present both as
-            coming soon.
-          </p>
-        </div>
-
-        <div class="build-grid" data-reveal>
-          <article class="build-card">
-            <span class="build-label">QuartoPad</span>
-            <h3>Closer to broader testing.</h3>
-            <p>
-              The editor, rendering flow, citations, and dataset tools already
-              justify a serious private-beta presentation.
-            </p>
-          </article>
-
-          <article class="build-card">
-            <span class="build-label">TrimWrite</span>
-            <h3>Feature-rich, but not launch copy yet.</h3>
-            <p>
-              The public repo includes a large app surface, but its own status
-              docs still flag production-readiness work as incomplete and the
-              repo is currently archived. That is not a good primary landing
-              destination for users yet.
-            </p>
-          </article>
-
-          <article class="build-card">
-            <span class="build-label">trimwrite.com</span>
-            <h3>Now positioned as the umbrella site.</h3>
-            <p>
-              The public homepage should present the two products together and
-              collect early interest instead of implying either is already open
-              for general release.
             </p>
           </article>
         </div>
