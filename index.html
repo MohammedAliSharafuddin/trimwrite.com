@@ -6,7 +6,7 @@
     <title>TrimWrite | Local-first writing tools in testing</title>
     <meta
       name="description"
-      content="TrimWrite is the umbrella brand for QuartoPad and TrimWrite. QuartoPad is a local Quarto editor for R. TrimWrite is an AI-pattern analyzer. Both products are currently in testing."
+      content="TrimWrite brings together QuartoPad and TrimWrite. QuartoPad is a local Quarto editor for R. TrimWrite is an AI-pattern analyzer. Both products are currently in testing."
     />
     <meta property="og:title" content="TrimWrite" />
     <meta
@@ -20,6 +20,34 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.TRIMWRITE_SITE_CONFIG = Object.assign(
+        {
+          gaMeasurementId: 'G-XXXXXXXXXX'
+        },
+        window.TRIMWRITE_SITE_CONFIG || {}
+      );
+
+      (function initGoogleAnalytics() {
+        const gaId = window.TRIMWRITE_SITE_CONFIG.gaMeasurementId;
+        if (!gaId || gaId === 'G-XXXXXXXXXX') return;
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag() {
+          window.dataLayer.push(arguments);
+        };
+
+        window.gtag('js', new Date());
+        window.gtag('config', gaId, {
+          anonymize_ip: true
+        });
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`;
+        document.head.appendChild(script);
+      })();
+    </script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -30,7 +58,7 @@
         <span class="brand-mark">TW</span>
         <span class="brand-copy">
           <strong>TrimWrite</strong>
-          <span>Umbrella brand</span>
+          <span>Local-first writing tools</span>
         </span>
       </a>
 
@@ -54,14 +82,14 @@
         <div class="hero-inner">
           <div class="hero-copy" data-reveal>
             <span class="hero-pill">Private beta across both products</span>
-            <p class="eyebrow">TrimWrite umbrella brand</p>
+            <p class="eyebrow">TrimWrite product line</p>
             <h1>
               Write it.
               <em>Render it.</em>
               Make sure it still sounds like you.
             </h1>
             <p class="hero-sub">
-              TrimWrite is the brand layer for two local-first writing tools in
+              TrimWrite brings together two local-first writing tools in
               testing. QuartoPad is a browser-based Quarto editor for R.
               TrimWrite is a pattern analyzer for drafts that feel too generic,
               too polished, or too model-shaped.
@@ -275,8 +303,8 @@
           <p class="eyebrow">Beta access</p>
           <h2>Join the waitlist for QuartoPad, TrimWrite, or both.</h2>
           <p class="notify-sub">
-            Leave your email and tell us what you want to test first. We will
-            reach out as access opens up.
+            Leave your email and tell us what you want to test first. Requests
+            go straight to our inbox, and we will reach out as access opens up.
           </p>
 
           <form class="notify-form" id="notify-form">

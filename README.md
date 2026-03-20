@@ -1,6 +1,6 @@
 # trimwrite.com
 
-Public umbrella site for the TrimWrite product line.
+Public site for TrimWrite and QuartoPad.
 
 The current landing page positions both products honestly as in testing:
 
@@ -25,12 +25,19 @@ npm run preview
 
 ## Waitlist flow
 
-The waitlist form currently falls back to `mailto:support@trimwrite.dev`.
+The waitlist form posts directly to `support@trimwrite.dev` using FormSubmit's
+static-site endpoint and falls back to `mailto:` if the request fails.
 
-If you want to collect beta requests in Google Sheets instead, set
+If you want to route requests somewhere else, set
 `window.TRIMWRITE_WAITLIST_ENDPOINT` before `script.js` loads, or replace the
-`WAITLIST_ENDPOINT` constant in `script.js` with your deployed Google Apps
-Script web app URL.
+`WAITLIST_ENDPOINT` constant in `script.js`.
+
+## Analytics
+
+Google Analytics 4 is wired behind a simple config hook.
+
+- Replace `G-XXXXXXXXXX` in `index.html` with your real GA4 measurement ID.
+- Waitlist submissions send a `generate_lead` event when the request succeeds.
 
 ## Assets
 

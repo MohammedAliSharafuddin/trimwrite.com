@@ -1,6 +1,7 @@
-const WAITLIST_ENDPOINT =
-  window.TRIMWRITE_WAITLIST_ENDPOINT || '';
 const WAITLIST_EMAIL = 'support@trimwrite.dev';
+const WAITLIST_ENDPOINT =
+  window.TRIMWRITE_WAITLIST_ENDPOINT ||
+  `https://formsubmit.co/ajax/${encodeURIComponent(WAITLIST_EMAIL)}`;
 
 const observer = new IntersectionObserver(
   entries => {
@@ -29,9 +30,17 @@ async function submitToEndpoint(payload) {
   const response = await fetch(WAITLIST_ENDPOINT, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
     },
-    body: JSON.stringify(payload)
+    body: JSON.stringify({
+      email: payload.email,
+      interest: payload.interest,
+      context: payload.context || 'Not provided',
+      source: payload.source,
+      submittedAt: payload.submittedAt,
+      _subject: `TrimWrite beta request: ${payload.interest}`
+    })
   });
 
   if (!response.ok) {
@@ -81,6 +90,13 @@ if (form && message) {
         form.reset();
         message.textContent =
           'Thanks. Your beta request has been recorded.';
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'waitlist',
+            event_label: payload.interest,
+            value: 1
+          });
+        }
       } else {
         openMailto(payload);
         form.reset();
