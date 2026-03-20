@@ -1,4 +1,4 @@
-const WAITLIST_EMAIL = 'support@trimwrite.dev';
+const WAITLIST_EMAIL = 'mohammedali.page@gmail.com';
 const WAITLIST_ENDPOINT =
   window.TRIMWRITE_WAITLIST_ENDPOINT ||
   `https://formsubmit.co/ajax/${encodeURIComponent(WAITLIST_EMAIL)}`;
@@ -105,7 +105,7 @@ if (form && message) {
       }
     } catch (error) {
       message.textContent =
-        'Could not route the request automatically. Email support@trimwrite.dev instead.';
+        'Could not route the request automatically. Email mohammedali.page@gmail.com instead.';
       console.error(error);
     } finally {
       submitButton.disabled = false;

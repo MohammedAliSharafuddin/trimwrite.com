@@ -25,7 +25,7 @@ npm run preview
 
 ## Waitlist flow
 
-The waitlist form posts directly to `support@trimwrite.dev` using FormSubmit's
+The waitlist form posts directly to `mohammedali.page@gmail.com` using FormSubmit's
 static-site endpoint and falls back to `mailto:` if the request fails.
 
 If you want to route requests somewhere else, set
