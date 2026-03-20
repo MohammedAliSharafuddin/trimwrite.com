@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrimeWrite</title>
+    <meta
+      name="description"
+      content="TrimeWrite builds local-first writing tools. QuartoPad is the first product: a browser-based editor for Quarto with live rendering, chunk execution, citations, and dataset previews."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">TW</span>
+        <span class="brand-text">TrimeWrite</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#quartopad">QuartoPad</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#positioning">Positioning</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" data-reveal>
+        <div class="hero-copy">
+          <p class="eyebrow">Local-first writing tools for technical work</p>
+          <h1>Write computational documents like they belong in a real editor.</h1>
+          <p class="lede">
+            TrimeWrite is the umbrella. QuartoPad is the first product: a
+            browser-based editor for Quarto with live rendering, chunk
+            execution, citations, and dataset previews running from your own
+            machine.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quartopad">See QuartoPad</a>
+            <a class="btn btn-secondary" href="#workflow">View Workflow</a>
+          </div>
+          <div class="signal-grid">
+            <div class="signal-card">
+              <span class="signal-label">Local-first</span>
+              <strong>No hosted editor required</strong>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Quarto-native</span>
+              <strong>Render HTML, slides, PDF, and Word</strong>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Research-aware</span>
+              <strong>Datasets, citations, and executable chunks</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <figure class="shot shot-main">
+            <img
+              src="/assets/screenshots/quartopad-editor.png"
+              alt="QuartoPad editor and preview"
+            />
+          </figure>
+          <figure class="shot shot-side shot-dataset">
+            <img
+              src="/assets/screenshots/quartopad-dataset.png"
+              alt="QuartoPad dataset preview"
+            />
+          </figure>
+          <figure class="shot shot-side shot-citations">
+            <img
+              src="/assets/screenshots/quartopad-citations.png"
+              alt="QuartoPad citation search"
+            />
+          </figure>
+          <p class="stage-caption">
+            Captured from a real end-to-end run of the product.
+          </p>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Value points">
+        <div>Browser UI</div>
+        <div>Persistent R session</div>
+        <div>Local Quarto render</div>
+        <div>Zotero and BibTeX</div>
+        <div>Dataset previews</div>
+      </section>
+
+      <section class="section section-dark" id="quartopad" data-reveal>
+        <div class="section-head">
+          <p class="eyebrow">First Product</p>
+          <h2>QuartoPad turns Quarto authoring into a working surface.</h2>
+          <p>
+            The point is not another generic writing app. The point is a tighter
+            environment for reproducible documents where authoring, code,
+            previews, and citations stay in the same flow.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide">
+            <div class="feature-copy">
+              <span class="feature-tag">Split editor</span>
+              <h3>Source, preview, and console live together.</h3>
+              <p>
+                Open a `.qmd`, run code against a persistent R environment, and
+                render the document without leaving the editor surface.
+              </p>
+              <ul class="feature-list">
+                <li>Inline chunk execution</li>
+                <li>Live Quarto rendering</li>
+                <li>HTML, slides, PDF, and Word output</li>
+              </ul>
+            </div>
+            <img
+              class="feature-image"
+              src="/assets/screenshots/quartopad-editor.png"
+              alt="QuartoPad editor"
+            />
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-tag">Data-aware</span>
+            <h3>Preview datasets without breaking writing flow.</h3>
+            <p>
+              Browse CSV or RDS files in the same workspace and keep the
+              document grounded in the data you are actually using.
+            </p>
+            <img
+              class="feature-image"
+              src="/assets/screenshots/quartopad-dataset.png"
+              alt="QuartoPad dataset preview"
+            />
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-tag">Citation workflow</span>
+            <h3>Search references where you write.</h3>
+            <p>
+              Work with local `.bib` files, CrossRef search, and Zotero-friendly
+              workflows without switching into a separate citation manager tab.
+            </p>
+            <img
+              class="feature-image"
+              src="/assets/screenshots/quartopad-citations.png"
+              alt="QuartoPad citations panel"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow" data-reveal>
+        <div class="section-head narrow">
+          <p class="eyebrow">Workflow</p>
+          <h2>What TrimeWrite is aiming for.</h2>
+        </div>
+        <div class="timeline">
+          <article class="step">
+            <span class="step-index">01</span>
+            <h3>Open a real project directory</h3>
+            <p>
+              TrimeWrite products should start from the files you already own,
+              not a forced cloud workspace.
+            </p>
+          </article>
+          <article class="step">
+            <span class="step-index">02</span>
+            <h3>Keep writing and computation adjacent</h3>
+            <p>
+              Code, output, datasets, and prose belong in one operational loop,
+              especially for technical writing and research reports.
+            </p>
+          </article>
+          <article class="step">
+            <span class="step-index">03</span>
+            <h3>Ship focused tools, not a vague platform</h3>
+            <p>
+              QuartoPad stays specific. TrimeWrite becomes the product family
+              that can later house other writing tools with equally clear scope.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section positioning" id="positioning" data-reveal>
+        <div class="positioning-panel">
+          <p class="eyebrow">Brand Architecture</p>
+          <h2>TrimeWrite is the umbrella. QuartoPad is the sharp product name.</h2>
+          <p>
+            That keeps the brand flexible while preserving the clarity of a tool
+            built specifically for Quarto, R, and technical writing workflows.
+          </p>
+        </div>
+        <div class="positioning-grid">
+          <div class="positioning-card">
+            <span>Use TrimeWrite for</span>
+            <strong>The broader product line and point of view</strong>
+          </div>
+          <div class="positioning-card">
+            <span>Use QuartoPad for</span>
+            <strong>The actual editor users evaluate and adopt</strong>
+          </div>
+          <div class="positioning-card">
+            <span>Lead with</span>
+            <strong>Local-first technical writing, not generic note-taking</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" data-reveal>
+        <p class="eyebrow">TrimeWrite</p>
+        <h2>Focused tools for people who write with code, references, and data.</h2>
+        <a class="btn btn-primary" href="#quartopad">Start With QuartoPad</a>
+      </section>
+    </main>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

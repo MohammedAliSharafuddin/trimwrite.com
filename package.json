@@ -1,0 +1,21 @@
+{
+  "name": "trimewrite-com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "trimewrite",
+    "quartopad",
+    "quarto"
+  ],
+  "license": "UNLICENSED",
+  "description": "Landing site for TrimeWrite and QuartoPad",
+  "devDependencies": {
+    "playwright": "^1.58.2",
+    "vite": "^8.0.1"
+  }
+}
