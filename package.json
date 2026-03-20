@@ -1,5 +1,5 @@
 {
-  "name": "trimewrite-com",
+  "name": "trimwrite-com",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,13 @@
     "preview": "vite preview"
   },
   "keywords": [
-    "trimewrite",
+    "trimwrite",
     "quartopad",
-    "quarto"
+    "quarto",
+    "writing"
   ],
   "license": "UNLICENSED",
-  "description": "Landing site for TrimeWrite and QuartoPad",
+  "description": "Public umbrella site for TrimWrite, QuartoPad, and early beta access",
   "devDependencies": {
     "playwright": "^1.58.2",
     "vite": "^8.0.1"

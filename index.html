@@ -3,224 +3,399 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TrimeWrite</title>
+    <title>TrimWrite | Local-first writing tools in testing</title>
     <meta
       name="description"
-      content="TrimeWrite builds local-first writing tools. QuartoPad is the first product: a browser-based editor for Quarto with live rendering, chunk execution, citations, and dataset previews."
+      content="TrimWrite is the umbrella brand for QuartoPad and TrimWrite. QuartoPad is a local Quarto editor for R. TrimWrite is an AI-pattern analyzer. Both products are currently in testing."
     />
+    <meta property="og:title" content="TrimWrite" />
+    <meta
+      property="og:description"
+      content="Write in QuartoPad. Check the voice in TrimWrite. Both products are in testing."
+    />
+    <meta property="og:url" content="https://trimwrite.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="backdrop"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top">
         <span class="brand-mark">TW</span>
-        <span class="brand-text">TrimeWrite</span>
+        <span class="brand-copy">
+          <strong>TrimWrite</strong>
+          <span>Umbrella brand</span>
+        </span>
       </a>
-      <nav class="site-nav">
+
+      <nav class="site-nav" aria-label="Primary">
         <a href="#quartopad">QuartoPad</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#positioning">Positioning</a>
+        <a href="#trimwrite-app">TrimWrite</a>
+        <a href="#status">Status</a>
+        <a href="#notify">Beta access</a>
+        <a
+          class="nav-cta"
+          href="https://github.com/MohammedAliSharafuddin/trimwrite.com"
+          target="_blank"
+          rel="noopener"
+          >Site source</a
+        >
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" data-reveal>
-        <div class="hero-copy">
-          <p class="eyebrow">Local-first writing tools for technical work</p>
-          <h1>Write computational documents like they belong in a real editor.</h1>
-          <p class="lede">
-            TrimeWrite is the umbrella. QuartoPad is the first product: a
-            browser-based editor for Quarto with live rendering, chunk
-            execution, citations, and dataset previews running from your own
-            machine.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#quartopad">See QuartoPad</a>
-            <a class="btn btn-secondary" href="#workflow">View Workflow</a>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy" data-reveal>
+            <span class="hero-pill">Private beta across both products</span>
+            <p class="eyebrow">TrimWrite umbrella brand</p>
+            <h1>
+              Write it.
+              <em>Render it.</em>
+              Make sure it still sounds like you.
+            </h1>
+            <p class="hero-sub">
+              TrimWrite is the brand layer for two local-first writing tools in
+              testing. QuartoPad is a browser-based Quarto editor for R.
+              TrimWrite is a pattern analyzer for drafts that feel too generic,
+              too polished, or too model-shaped.
+            </p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#notify">Request beta access</a>
+              <a class="btn btn-secondary" href="#products"
+                >See product snapshots</a
+              >
+              <a class="btn btn-tertiary" href="#status">Read build status</a>
+            </div>
+
+            <div class="hero-chips">
+              <span class="chip chip-qp">QuartoPad: private beta</span>
+              <span class="chip chip-tw">TrimWrite: internal beta</span>
+              <span class="chip">Local-first workflow</span>
+              <span class="chip">Open-source in progress</span>
+            </div>
           </div>
-          <div class="signal-grid">
-            <div class="signal-card">
-              <span class="signal-label">Local-first</span>
-              <strong>No hosted editor required</strong>
-            </div>
-            <div class="signal-card">
-              <span class="signal-label">Quarto-native</span>
-              <strong>Render HTML, slides, PDF, and Word</strong>
-            </div>
-            <div class="signal-card">
-              <span class="signal-label">Research-aware</span>
-              <strong>Datasets, citations, and executable chunks</strong>
-            </div>
-          </div>
-        </div>
 
-        <div class="hero-stage">
-          <figure class="shot shot-main">
-            <img
-              src="/assets/screenshots/quartopad-editor.png"
-              alt="QuartoPad editor and preview"
-            />
-          </figure>
-          <figure class="shot shot-side shot-dataset">
-            <img
-              src="/assets/screenshots/quartopad-dataset.png"
-              alt="QuartoPad dataset preview"
-            />
-          </figure>
-          <figure class="shot shot-side shot-citations">
-            <img
-              src="/assets/screenshots/quartopad-citations.png"
-              alt="QuartoPad citation search"
-            />
-          </figure>
-          <p class="stage-caption">
-            Captured from a real end-to-end run of the product.
-          </p>
-        </div>
-      </section>
-
-      <section class="band" aria-label="Value points">
-        <div>Browser UI</div>
-        <div>Persistent R session</div>
-        <div>Local Quarto render</div>
-        <div>Zotero and BibTeX</div>
-        <div>Dataset previews</div>
-      </section>
-
-      <section class="section section-dark" id="quartopad" data-reveal>
-        <div class="section-head">
-          <p class="eyebrow">First Product</p>
-          <h2>QuartoPad turns Quarto authoring into a working surface.</h2>
-          <p>
-            The point is not another generic writing app. The point is a tighter
-            environment for reproducible documents where authoring, code,
-            previews, and citations stay in the same flow.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card feature-card-wide">
-            <div class="feature-copy">
-              <span class="feature-tag">Split editor</span>
-              <h3>Source, preview, and console live together.</h3>
+          <div class="hero-stage" data-reveal>
+            <figure class="hero-shot hero-shot-main">
+              <img
+                src="/assets/screenshots/quartopad-editor.png"
+                alt="QuartoPad editor showing a Quarto document and rendered preview side by side"
+              />
+            </figure>
+            <figure class="hero-shot hero-shot-float">
+              <img
+                src="/assets/screenshots/trimwrite-app.png"
+                alt="TrimWrite analysis interface showing highlighted text and writing statistics"
+              />
+            </figure>
+            <div class="hero-note">
+              <span>Why this site changed</span>
               <p>
-                Open a `.qmd`, run code against a persistent R environment, and
-                render the document without leaving the editor surface.
+                The public face now treats both products as pre-release. That is
+                the accurate position for the code currently in testing.
               </p>
-              <ul class="feature-list">
-                <li>Inline chunk execution</li>
-                <li>Live Quarto rendering</li>
-                <li>HTML, slides, PDF, and Word output</li>
-              </ul>
             </div>
-            <img
-              class="feature-image"
-              src="/assets/screenshots/quartopad-editor.png"
-              alt="QuartoPad editor"
-            />
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-tag">Data-aware</span>
-            <h3>Preview datasets without breaking writing flow.</h3>
-            <p>
-              Browse CSV or RDS files in the same workspace and keep the
-              document grounded in the data you are actually using.
-            </p>
-            <img
-              class="feature-image"
-              src="/assets/screenshots/quartopad-dataset.png"
-              alt="QuartoPad dataset preview"
-            />
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-tag">Citation workflow</span>
-            <h3>Search references where you write.</h3>
-            <p>
-              Work with local `.bib` files, CrossRef search, and Zotero-friendly
-              workflows without switching into a separate citation manager tab.
-            </p>
-            <img
-              class="feature-image"
-              src="/assets/screenshots/quartopad-citations.png"
-              alt="QuartoPad citations panel"
-            />
-          </article>
+          </div>
         </div>
       </section>
 
-      <section class="section workflow" id="workflow" data-reveal>
-        <div class="section-head narrow">
-          <p class="eyebrow">Workflow</p>
-          <h2>What TrimeWrite is aiming for.</h2>
+      <section class="status-strip">
+        <div class="status-item">
+          <span>QuartoPad</span>
+          <strong>Private beta package for Quarto and R workflows</strong>
         </div>
-        <div class="timeline">
-          <article class="step">
-            <span class="step-index">01</span>
-            <h3>Open a real project directory</h3>
-            <p>
-              TrimeWrite products should start from the files you already own,
-              not a forced cloud workspace.
-            </p>
-          </article>
-          <article class="step">
-            <span class="step-index">02</span>
-            <h3>Keep writing and computation adjacent</h3>
-            <p>
-              Code, output, datasets, and prose belong in one operational loop,
-              especially for technical writing and research reports.
-            </p>
-          </article>
-          <article class="step">
-            <span class="step-index">03</span>
-            <h3>Ship focused tools, not a vague platform</h3>
-            <p>
-              QuartoPad stays specific. TrimeWrite becomes the product family
-              that can later house other writing tools with equally clear scope.
-            </p>
-          </article>
+        <div class="status-item">
+          <span>TrimWrite</span>
+          <strong>Public repo, working analyzer UI, broader hardening still underway</strong>
+        </div>
+        <div class="status-item">
+          <span>Launch status</span>
+          <strong>Both products are still in testing</strong>
         </div>
       </section>
 
-      <section class="section positioning" id="positioning" data-reveal>
-        <div class="positioning-panel">
-          <p class="eyebrow">Brand Architecture</p>
-          <h2>TrimeWrite is the umbrella. QuartoPad is the sharp product name.</h2>
+      <section class="product-shell qp-shell" id="products">
+        <div class="product-head" id="quartopad" data-reveal>
+          <span class="product-tag tag-qp">QuartoPad · private beta</span>
+          <h2>Quarto authoring, rendering, chunks, data, and citations in one surface.</h2>
           <p>
-            That keeps the brand flexible while preserving the clarity of a tool
-            built specifically for Quarto, R, and technical writing workflows.
+            QuartoPad opens from R, runs locally on your machine, and keeps the
+            document, preview, datasets, and references close enough to work as
+            one loop instead of five tabs.
           </p>
         </div>
-        <div class="positioning-grid">
-          <div class="positioning-card">
-            <span>Use TrimeWrite for</span>
-            <strong>The broader product line and point of view</strong>
-          </div>
-          <div class="positioning-card">
-            <span>Use QuartoPad for</span>
-            <strong>The actual editor users evaluate and adopt</strong>
-          </div>
-          <div class="positioning-card">
-            <span>Lead with</span>
-            <strong>Local-first technical writing, not generic note-taking</strong>
-          </div>
+
+        <div class="screenshot-frame frame-qp" data-reveal>
+          <img
+            src="/assets/screenshots/quartopad-editor.png"
+            alt="QuartoPad split editor with source on the left and rendered output on the right"
+          />
+        </div>
+
+        <div class="feature-grid" data-reveal>
+          <article class="feature-card">
+            <span class="feature-label">Editor loop</span>
+            <h3>Write, render, and inspect without leaving the document.</h3>
+            <p>
+              Edit `.qmd`, render HTML or slides, and keep the output visible in
+              the same browser window instead of bouncing between tools.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-label">Persistent R session</span>
+            <h3>Chunk execution behaves like a real working notebook.</h3>
+            <p>
+              Inline execution sends code into a live R session so state carries
+              between chunks instead of resetting on every action.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-label">Reference workflow</span>
+            <h3>Data previews and citations stay close to the draft.</h3>
+            <p>
+              Browse datasets, inspect `.bib` files, and search references
+              beside the document rather than in separate helper apps.
+            </p>
+          </article>
+        </div>
+
+        <div class="gallery-grid" data-reveal>
+          <figure class="gallery-card">
+            <img
+              src="/assets/screenshots/quartopad-dataset.png"
+              alt="QuartoPad dataset preview panel showing tabular data in the workspace"
+            />
+            <figcaption>
+              Dataset preview in the same workspace as the Quarto document.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              src="/assets/screenshots/quartopad-citations.png"
+              alt="QuartoPad citations panel showing bibliography tools"
+            />
+            <figcaption>
+              Citations, BibTeX search, and reference insertion without leaving
+              the editor.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="cta" data-reveal>
-        <p class="eyebrow">TrimeWrite</p>
-        <h2>Focused tools for people who write with code, references, and data.</h2>
-        <a class="btn btn-primary" href="#quartopad">Start With QuartoPad</a>
+      <section class="product-shell tw-shell" id="trimwrite-app">
+        <div class="product-head" data-reveal>
+          <span class="product-tag tag-tw">TrimWrite · internal beta</span>
+          <h2>
+            A draft analyzer for vague phrasing, AI habits, and over-polished
+            prose.
+          </h2>
+          <p>
+            The public repo already contains a substantial analyzer UI. The
+            right public message, though, is still beta: useful enough to test,
+            not yet positioned as fully launched.
+          </p>
+        </div>
+
+        <div class="trimwrite-layout" data-reveal>
+          <div class="trimwrite-copy">
+            <div class="callout">
+              <span class="callout-label">Current beta scope</span>
+              <p>
+                Pattern highlighting, readability, structural signals, export
+                tools, and sample-driven analysis are already visible in the
+                working interface.
+              </p>
+            </div>
+
+            <div class="callout">
+              <span class="callout-label">Why it is still in testing</span>
+              <p>
+                The repo documentation still lists deployment, CI/CD, payment
+                flow, and broader testing work as pending. The site now matches
+                that reality.
+              </p>
+            </div>
+
+            <div class="callout">
+              <span class="callout-label">Public-facing promise</span>
+              <p>
+                Paste the draft. See the phrases that sound vague, boilerplate,
+                loaded, or model-shaped. Keep the voice that still feels like
+                yours.
+              </p>
+            </div>
+          </div>
+
+          <figure class="screenshot-frame frame-tw">
+            <img
+              src="/assets/screenshots/trimwrite-app.png"
+              alt="TrimWrite analyzer interface with a source pane, highlighted output, and writing statistics"
+            />
+            <figcaption>
+              Captured from a live local run of the current TrimWrite interface.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="workflow-shell">
+        <div class="workflow-head" data-reveal>
+          <p class="eyebrow eyebrow-light">How the products fit together</p>
+          <h2>One brand. Two precise tools. One writing loop.</h2>
+        </div>
+
+        <div class="workflow-grid" data-reveal>
+          <article class="workflow-card">
+            <span class="workflow-index">01</span>
+            <h3>TrimWrite is the umbrella name.</h3>
+            <p>
+              Use the brand to hold the point of view: local-first tools for
+              people who write with data, code, references, and revision.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <span class="workflow-index">02</span>
+            <h3>QuartoPad stays product-specific.</h3>
+            <p>
+              The name is sharp and credible for the Quarto and R audience. It
+              should not be flattened into a generic brand label.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <span class="workflow-index">03</span>
+            <h3>TrimWrite the app stays distinct too.</h3>
+            <p>
+              That keeps the analysis product clear: it is not another editor,
+              it is the second tool in the line.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="build-shell" id="status">
+        <div class="build-head" data-reveal>
+          <p class="eyebrow">Current build status</p>
+          <h2>What the repo audit says right now.</h2>
+          <p>
+            The site should lead with honesty. QuartoPad is further along as a
+            product. TrimWrite has a real working UI but is still in the
+            hardening phase. <code>trimwrite.com</code> should present both as
+            coming soon.
+          </p>
+        </div>
+
+        <div class="build-grid" data-reveal>
+          <article class="build-card">
+            <span class="build-label">QuartoPad</span>
+            <h3>Closer to broader testing.</h3>
+            <p>
+              The editor, rendering flow, citations, and dataset tools already
+              justify a serious private-beta presentation.
+            </p>
+          </article>
+
+          <article class="build-card">
+            <span class="build-label">TrimWrite</span>
+            <h3>Feature-rich, but not launch copy yet.</h3>
+            <p>
+              The public repo includes a large app surface, but its own status
+              docs still flag production-readiness work as incomplete and the
+              repo is currently archived. That is not a good primary landing
+              destination for users yet.
+            </p>
+          </article>
+
+          <article class="build-card">
+            <span class="build-label">trimwrite.com</span>
+            <h3>Now positioned as the umbrella site.</h3>
+            <p>
+              The public homepage should present the two products together and
+              collect early interest instead of implying either is already open
+              for general release.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="notify-shell" id="notify">
+        <div class="notify-card" data-reveal>
+          <p class="eyebrow">Beta access</p>
+          <h2>Join the waitlist for QuartoPad, TrimWrite, or both.</h2>
+          <p class="notify-sub">
+            The form currently routes to email. If you later want spreadsheet
+            collection, the same form can be pointed at a Google Apps Script
+            endpoint without changing the page structure.
+          </p>
+
+          <form class="notify-form" id="notify-form">
+            <label class="sr-only" for="notify-email">Email</label>
+            <input
+              id="notify-email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+            />
+
+            <label class="sr-only" for="notify-interest">Product interest</label>
+            <select id="notify-interest" name="interest" required>
+              <option value="Both products">Both products</option>
+              <option value="QuartoPad beta">QuartoPad beta</option>
+              <option value="TrimWrite beta">TrimWrite beta</option>
+            </select>
+
+            <label class="sr-only" for="notify-context">Use case</label>
+            <textarea
+              id="notify-context"
+              name="context"
+              rows="3"
+              placeholder="What kind of writing or workflow do you want to test?"
+            ></textarea>
+
+            <div class="notify-actions">
+              <button type="submit" class="btn btn-primary">
+                Request beta access
+              </button>
+              <a class="inline-link" href="mailto:support@trimwrite.dev"
+                >support@trimwrite.dev</a
+              >
+            </div>
+          </form>
+
+          <p class="notify-message" id="notify-message" aria-live="polite"></p>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <span class="footer-mark">TrimWrite © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/MohammedAliSharafuddin" target="_blank" rel="noopener"
+          >GitHub profile</a
+        >
+        <a
+          href="https://github.com/MohammedAliSharafuddin/trimwrite.com"
+          target="_blank"
+          rel="noopener"
+          >Site source</a
+        >
+        <a href="mailto:support@trimwrite.dev">Contact</a>
+      </div>
+    </footer>
 
     <script type="module" src="/script.js"></script>
   </body>
