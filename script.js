@@ -35,11 +35,15 @@ async function submitToEndpoint(payload) {
     },
     body: JSON.stringify({
       email: payload.email,
+      _replyto: payload.email,
       interest: payload.interest,
       context: payload.context || 'Not provided',
       source: payload.source,
+      page: window.location.href,
       submittedAt: payload.submittedAt,
-      _subject: `TrimWrite beta request: ${payload.interest}`
+      _subject: `TrimWrite beta request: ${payload.interest}`,
+      _captcha: 'false',
+      _template: 'table'
     })
   });
 

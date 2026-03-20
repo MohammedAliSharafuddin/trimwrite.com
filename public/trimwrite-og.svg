@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">TrimWrite</title>
+  <desc id="desc">Local-first writing tools in testing: QuartoPad and TrimWrite.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7f2e9" />
+      <stop offset="55%" stop-color="#eef6f2" />
+      <stop offset="100%" stop-color="#efe8fb" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#fffdf9" stroke="#d8d2c8" />
+  <text x="112" y="156" fill="#2c2a25" font-family="IBM Plex Mono, Menlo, monospace" font-size="24" letter-spacing="3">TRIMWRITE</text>
+  <text x="112" y="260" fill="#1f1d19" font-family="Fraunces, Georgia, serif" font-size="74">Local-first writing tools</text>
+  <text x="112" y="340" fill="#2f5d48" font-family="Fraunces, Georgia, serif" font-size="74">for drafting and revision.</text>
+  <text x="112" y="412" fill="#545049" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="32">QuartoPad for Quarto authoring. TrimWrite for final-draft review.</text>
+  <rect x="112" y="462" width="240" height="52" rx="10" fill="#1f1d19" />
+  <text x="144" y="496" fill="#fffdf9" font-family="IBM Plex Mono, Menlo, monospace" font-size="22">PRIVATE BETA</text>
+  <rect x="848" y="150" width="190" height="150" rx="20" fill="#e7f2eb" stroke="#bdd4c7" />
+  <text x="878" y="208" fill="#1f5a3e" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">QUARTOPAD</text>
+  <text x="878" y="246" fill="#214133" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Write</text>
+  <text x="878" y="282" fill="#214133" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Render</text>
+  <text x="878" y="318" fill="#214133" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Preview</text>
+  <rect x="848" y="330" width="190" height="150" rx="20" fill="#f0e9fb" stroke="#d3c2f1" />
+  <text x="878" y="388" fill="#53317e" font-family="IBM Plex Mono, Menlo, monospace" font-size="20">TRIMWRITE</text>
+  <text x="878" y="426" fill="#432b63" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Review</text>
+  <text x="878" y="462" fill="#432b63" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Revise</text>
+  <text x="878" y="498" fill="#432b63" font-family="IBM Plex Sans, Helvetica, sans-serif" font-size="28">Ship</text>
+</svg>
