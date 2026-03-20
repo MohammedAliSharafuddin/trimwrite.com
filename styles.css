@@ -251,8 +251,7 @@ h3 {
 .feature-card p,
 .callout p,
 .workflow-card p,
-.notify-sub,
-.hero-note p {
+.notify-sub {
   color: var(--ink-soft);
   font-size: 1.02rem;
 }
@@ -350,7 +349,7 @@ h3 {
 
 .hero-shot,
 .screenshot-frame,
-.gallery-card {
+.detail-card {
   border: 1px solid rgba(255, 255, 255, 0.54);
   background: rgba(255, 253, 248, 0.82);
   backdrop-filter: blur(16px);
@@ -365,8 +364,7 @@ h3 {
 }
 
 .hero-shot img,
-.screenshot-frame img,
-.gallery-card img {
+.screenshot-frame img {
   border-radius: 18px;
 }
 
@@ -379,37 +377,9 @@ h3 {
 .hero-shot-float {
   width: 56%;
   right: 0;
-  bottom: 34px;
+  bottom: 64px;
   transform: rotate(6deg);
   animation: drift-float 9s ease-in-out infinite;
-}
-
-.hero-note {
-  position: absolute;
-  left: 24px;
-  bottom: 18px;
-  width: min(320px, calc(100% - 56px));
-  padding: 20px 22px;
-  border-radius: 22px;
-  background: rgba(15, 13, 10, 0.86);
-  color: var(--paper);
-  box-shadow: 0 20px 44px rgba(15, 13, 10, 0.24);
-}
-
-.hero-note span {
-  display: block;
-  margin-bottom: 8px;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(247, 242, 232, 0.58);
-}
-
-.hero-note p {
-  margin: 0;
-  color: rgba(247, 242, 232, 0.88);
-  font-size: 0.95rem;
 }
 
 .status-strip {
@@ -510,14 +480,6 @@ h3 {
 
 .frame-tw {
   margin: 0;
-  padding-bottom: 12px;
-}
-
-.frame-tw figcaption {
-  margin-top: 10px;
-  color: var(--ink-muted);
-  font-size: 0.9rem;
-  text-align: center;
 }
 
 .feature-grid {
@@ -553,28 +515,28 @@ h3 {
   font-size: 0.97rem;
 }
 
-.gallery-grid,
+.detail-grid,
 .trimwrite-layout,
 .workflow-grid {
   display: grid;
   gap: 18px;
 }
 
-.gallery-grid {
+.detail-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 18px;
 }
 
-.gallery-card {
-  margin: 0;
-  padding: 14px;
+.detail-card {
+  padding: 24px;
   border-radius: 26px;
+  box-shadow: var(--shadow-soft);
 }
 
-.gallery-card figcaption {
-  margin-top: 14px;
-  color: var(--ink-muted);
-  font-size: 0.95rem;
+.detail-card p {
+  margin: 14px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.97rem;
 }
 
 .trimwrite-layout {
@@ -801,7 +763,7 @@ h3 {
     justify-content: flex-start;
   }
 
-  .gallery-grid {
+  .detail-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -847,13 +809,6 @@ h3 {
     width: 68%;
     right: -4px;
     bottom: 28px;
-  }
-
-  .hero-note {
-    width: calc(100% - 24px);
-    left: 12px;
-    right: 12px;
-    bottom: 8px;
   }
 
   .notify-actions {

@@ -7,7 +7,8 @@ The current landing page positions both products honestly as in testing:
 - `QuartoPad` is the private-beta Quarto editor for R workflows
 - `TrimWrite` is the public AI-pattern analyzer repo, still in beta
 
-The site uses screenshots captured from real local runs of both products.
+The site uses animated demo GIFs generated from local scene files for both
+products.
 
 ## Local development
 
@@ -34,5 +35,7 @@ Script web app URL.
 
 ## Assets
 
-- Product screenshots live in `assets/screenshots/`
+- Product demo GIFs live in `assets/animations/`
 - The landing page source is `index.html`, `styles.css`, and `script.js`
+- Demo scene source files live in `tools/demo-scenes/`
+- Regenerate the GIFs with `node tools/render-demo-gifs.mjs`
