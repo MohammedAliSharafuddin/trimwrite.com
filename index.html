@@ -23,14 +23,14 @@
     <script>
       window.TRIMWRITE_SITE_CONFIG = Object.assign(
         {
-          gaMeasurementId: 'G-XXXXXXXXXX'
+          gaMeasurementId: 'G-7TRKHD2DT3'
         },
         window.TRIMWRITE_SITE_CONFIG || {}
       );
 
       (function initGoogleAnalytics() {
         const gaId = window.TRIMWRITE_SITE_CONFIG.gaMeasurementId;
-        if (!gaId || gaId === 'G-XXXXXXXXXX') return;
+        if (!gaId) return;
 
         window.dataLayer = window.dataLayer || [];
         window.gtag = function gtag() {

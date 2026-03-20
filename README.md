@@ -36,7 +36,7 @@ If you want to route requests somewhere else, set
 
 Google Analytics 4 is wired behind a simple config hook.
 
-- Replace `G-XXXXXXXXXX` in `index.html` with your real GA4 measurement ID.
+- GA4 is configured in `index.html` for the public site.
 - Waitlist submissions send a `generate_lead` event when the request succeeds.
 
 ## Assets
