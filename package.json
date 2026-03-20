@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "capture:demos": "node tools/render-live-demos.mjs"
   },
   "keywords": [
     "trimwrite",
