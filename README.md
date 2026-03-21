@@ -1,6 +1,15 @@
 # trimwrite.com
 
+Canonical public product page:
+<https://flairmi.com/products/trimwrite.html>
+
 Public site for TrimWrite and QuartoPad.
+
+Current role in the portfolio:
+
+- soft-launch vanity and campaign domain
+- public product canon lives on FlairMI
+- redirect or thin-canonical strategy should be applied after launch, not during soft launch
 
 The current landing page positions both products honestly as in testing:
 
